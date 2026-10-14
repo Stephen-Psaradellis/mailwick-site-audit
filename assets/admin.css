@@ -1,0 +1,87 @@
+/* Site Check admin page. Loaded on Tools > Mailwick Site Audit only. */
+
+.scepa-wrap .scepa-intro {
+	max-width: 760px;
+}
+
+.scepa-inline-form {
+	margin: 0.5em 0 1em;
+}
+
+.scepa-table {
+	max-width: 1100px;
+}
+
+.scepa-table th.scepa-check {
+	width: 22%;
+	font-weight: 600;
+}
+
+.scepa-table td.scepa-result {
+	width: 10%;
+	white-space: nowrap;
+}
+
+.scepa-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 10px;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.6;
+	color: #fff;
+	background: #646970;
+}
+
+.scepa-badge--critical {
+	background: #b32d2e;
+}
+
+.scepa-badge--recommended {
+	background: #996800;
+}
+
+.scepa-badge--good {
+	background: #007017;
+}
+
+.scepa-headline {
+	margin-top: 0;
+}
+
+.scepa-findings {
+	margin: 0 0 0.75em 1.25em;
+	list-style: disc;
+}
+
+.scepa-steps,
+.scepa-details {
+	margin: 0.5em 0;
+}
+
+.scepa-steps summary,
+.scepa-details summary {
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.scepa-steps ol {
+	margin: 0.5em 0 0.5em 1.5em;
+}
+
+.scepa-details code {
+	word-break: break-all;
+}
+
+.scepa-done-for-you {
+	margin-bottom: 0;
+	color: #646970;
+	font-size: 12px;
+}
+
+@media screen and (max-width: 782px) {
+	.scepa-table th.scepa-check,
+	.scepa-table td.scepa-result {
+		width: auto;
+	}
+}
