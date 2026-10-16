@@ -327,6 +327,25 @@ final class SCEPA_Admin {
 	}
 
 	/**
+	 * The fix guide for one check: a page under SCEPA_FIX_URL with the steps and a quote form.
+	 *
+	 * @param string $id Check id.
+	 * @return string URL.
+	 */
+	private static function fix_url( $id ) {
+		$guides = array(
+			'email_forgery'  => 'forged-email-fix.html',
+			'padlock'        => 'not-secure-fix.html',
+			'updates'        => 'wordpress-update-fix.html',
+			'phone_view'     => 'phone-view-fix.html',
+			'tap_to_call'    => 'tap-to-call-fix.html',
+			'contact_email'  => 'mailto-form-fix.html',
+			'search_snippet' => 'search-snippet-fix.html',
+		);
+		return SCEPA_FIX_URL . ( isset( $guides[ $id ] ) ? $guides[ $id ] : '' );
+	}
+
+	/**
 	 * Render one check row.
 	 *
 	 * @param string $id     Check id.
@@ -405,7 +424,7 @@ final class SCEPA_Admin {
 				<?php if ( $failing ) : ?>
 					<p class="scepa-done-for-you">
 						<?php esc_html_e( 'Prefer it done for you?', 'mailwick-site-audit' ); ?>
-						<a href="<?php echo esc_url( SCEPA_FIX_URL ); ?>" target="_blank" rel="noopener noreferrer"><?php esc_html_e( 'See fixed-price fixes', 'mailwick-site-audit' ); ?><span class="screen-reader-text"> <?php esc_html_e( '(opens in a new tab)', 'mailwick-site-audit' ); ?></span></a>
+						<a href="<?php echo esc_url( self::fix_url( $id ) ); ?>" target="_blank" rel="noopener noreferrer"><?php esc_html_e( 'See the fix guide and a fixed price', 'mailwick-site-audit' ); ?><span class="screen-reader-text"> <?php esc_html_e( '(opens in a new tab)', 'mailwick-site-audit' ); ?></span></a>
 					</p>
 				<?php endif; ?>
 			</td>

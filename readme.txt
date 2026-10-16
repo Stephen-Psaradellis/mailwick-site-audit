@@ -41,7 +41,7 @@ This plugin does not connect to any third-party service.
 * **DNS lookups.** To check SPF and DMARC, the plugin asks your server's own DNS resolver for the TXT records of your site's domain and its `_dmarc` name. Only your domain name is looked up; this is the same public lookup any mail server does when it receives mail from you.
 * **Your own home page.** To check the padlock, mixed content, phone view, tap-to-call and search snippet, the plugin requests your site's own home URL (and its http:// version, to see whether it redirects to https://).
 
-The "See fixed-price fixes" link on the plugin's page points to https://stephen-psaradellis.github.io/demos/ and is only followed if you click it. The plugin never requests that address and sends it no data.
+Under a failing check, the "See the fix guide and a fixed price" link points to that check's guide under https://stephen-psaradellis.github.io/demos/ and is only followed if you click it. The plugin never requests those pages and sends them no data.
 
 == Installation ==
 
