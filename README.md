@@ -35,7 +35,10 @@ plugin's own page, under a failing check only.
 
 ## Install
 
-Download `mailwick-site-audit.zip` from the
+In WordPress: **Plugins > Add New**, search **Mailwick Site Audit**, Install, Activate -
+or see the listing at [wordpress.org/plugins/mailwick-site-audit](https://wordpress.org/plugins/mailwick-site-audit/).
+
+Or download `mailwick-site-audit.zip` from the
 [latest release](https://github.com/Stephen-Psaradellis/mailwick-site-audit/releases/latest),
 then **Plugins > Add New > Upload Plugin**. Requires WordPress 5.8+ and PHP 7.4+;
 tested up to 7.1.
